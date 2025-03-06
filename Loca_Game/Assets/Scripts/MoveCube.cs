@@ -13,7 +13,7 @@ public class moveCube : MonoBehaviour
     private void OnEnable()
     {
         // Find the action map and move action
-        var actionMap = inputActions.FindActionMap("Player");
+        var actionMap = inputActions.FindActionMap("PlayerOne");
         moveAction = actionMap.FindAction("Movement");
 
         // Enable input actions
@@ -28,7 +28,7 @@ public class moveCube : MonoBehaviour
     private void OnDisable()
     {
         // Disable input actions and unsubscribe events
-        moveAction.performed -= OnMove; // This listens for when the player presses a movement key like a or d
+        moveAction.performed -= OnMove; // This listens for when the player stops presses a movement key like a or d
         moveAction.canceled -= OnMoveCancelled; // This listens for when the player releases the key
         moveAction.Disable(); // It turns off the input action -  Unity will stop listening for that specific input. Improves performance by stopping unnecessary input checks.
     }
