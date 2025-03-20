@@ -9,6 +9,7 @@ public class SplitScreenManager : MonoBehaviour
     void Start()
     {
         PlayerInput.Instantiate(playerOne);
+        
         PlayerInput.Instantiate(playerTwo);
     }
 

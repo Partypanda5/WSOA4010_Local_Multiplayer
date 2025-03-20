@@ -8,6 +8,7 @@ public class PlayerTwoScript : MonoBehaviour
     public float jumpForce = 7f;
     private Vector3 cubeDirection;
     private Rigidbody rb;
+    private Animator anim;
 
     [Header("Shooting Settings")]
     public GameObject projectilePrefab;
@@ -16,7 +17,8 @@ public class PlayerTwoScript : MonoBehaviour
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody>(); // Ensure cube has a Rigidbody component
+        rb = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
     }
 
     private void Start()
@@ -47,6 +49,7 @@ public class PlayerTwoScript : MonoBehaviour
         if (ctx.performed && Mathf.Abs(rb.linearVelocity.y) < 0.01f) // Ensures jumping only when on the ground
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            anim.SetTrigger("Jump");
         }
     }
 
