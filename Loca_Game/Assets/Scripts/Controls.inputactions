@@ -1,4 +1,5 @@
 {
+    "version": 1,
     "name": "Controls",
     "maps": [
         {
@@ -13,33 +14,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
-                },
-                {
-                    "name": "Jump",
-                    "type": "Button",
-                    "id": "382b04b1-c05d-4ed7-8eac-1323fdd60ab6",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Shoot",
-                    "type": "Button",
-                    "id": "1a247ebc-8c74-49ed-ad71-dd103feff53b",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Movement02",
-                    "type": "Button",
-                    "id": "cfd65d38-1cca-4218-9ccc-da8ceb6e67d3",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -110,7 +84,7 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
+                    "name": "Up",
                     "id": "e70d4292-fd21-467d-a2ff-a365d2e537cc",
                     "path": "<Keyboard>/w",
                     "interactions": "",
@@ -121,7 +95,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "down",
+                    "name": "Down",
                     "id": "154187e5-9a40-47b5-99c7-3cdd00daead9",
                     "path": "<Keyboard>/s",
                     "interactions": "",
@@ -132,7 +106,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "left",
+                    "name": "Left",
                     "id": "d70b657b-04ae-46c2-a21a-04a9a9834593",
                     "path": "<Keyboard>/a",
                     "interactions": "",
@@ -143,112 +117,13 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "right",
+                    "name": "Right",
                     "id": "0cf55c91-a0cb-4a7f-a4cb-446ea09af79e",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard",
                     "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "",
-                    "id": "f160dd1d-862a-476e-a95d-43a05716326a",
-                    "path": "<Gamepad>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Controller",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "0ba537b1-ff68-4ebd-8531-8b0de1295b48",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "70325c67-0875-41cf-83a9-4ad7a6736e03",
-                    "path": "<Gamepad>/rightTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Controller",
-                    "action": "Shoot",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "da098de0-6a89-4b00-84ae-c7c54df34547",
-                    "path": "<Keyboard>/f",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard",
-                    "action": "Shoot",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "ArrowsKeys",
-                    "id": "d1b9f96d-b77b-449a-9b64-4c331ff06a93",
-                    "path": "2DVector",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement02",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "up",
-                    "id": "29a44f0d-e154-4d44-9e14-77d379c28d01",
-                    "path": "<Keyboard>/upArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard02",
-                    "action": "Movement02",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "9bd180e3-fcfe-466f-bfa8-7dbd375c09e2",
-                    "path": "<Keyboard>/downArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard02",
-                    "action": "Movement02",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "a88ec4bf-95af-46a4-9303-5904daa6aa07",
-                    "path": "<Keyboard>/leftArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard02",
-                    "action": "Movement02",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "040dd29c-669d-4f73-b5db-4a3ac88cd743",
-                    "path": "<Keyboard>/rightArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard02",
-                    "action": "Movement02",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }
@@ -260,30 +135,12 @@
             "actions": [
                 {
                     "name": "Movement02",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "0dd1dd64-54d0-4e25-949c-3d2ada1725dd",
-                    "expectedControlType": "",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Jump02",
-                    "type": "Button",
-                    "id": "30cb747b-e9cc-4ba3-92a2-89cee3399c6a",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Shoot02",
-                    "type": "Button",
-                    "id": "66b53649-49c6-4877-9f18-a1be0bd4f4e1",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -299,7 +156,7 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
+                    "name": "Up",
                     "id": "9b6821d6-2dca-43fa-beea-74de9ec94e89",
                     "path": "<Keyboard>/upArrow",
                     "interactions": "",
@@ -310,7 +167,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "down",
+                    "name": "Down",
                     "id": "7acbdd19-db85-4b42-b897-ab99b4f66af7",
                     "path": "<Keyboard>/downArrow",
                     "interactions": "",
@@ -321,7 +178,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "left",
+                    "name": "Left",
                     "id": "c344cce8-2015-4252-b919-404a1c20695a",
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
@@ -332,7 +189,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "right",
+                    "name": "Right",
                     "id": "4093ff46-d0b7-439d-93f3-8d02e4608c59",
                     "path": "<Keyboard>/rightArrow",
                     "interactions": "",
@@ -341,28 +198,6 @@
                     "action": "Movement02",
                     "isComposite": false,
                     "isPartOfComposite": true
-                },
-                {
-                    "name": "",
-                    "id": "6e0a7d7b-5af1-4e04-9018-e54604412319",
-                    "path": "<Keyboard>/enter",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard02",
-                    "action": "Jump02",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "b6e324c1-da87-4995-a71a-b373fb96952b",
-                    "path": "<Keyboard>/g",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard02",
-                    "action": "Shoot02",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         },
